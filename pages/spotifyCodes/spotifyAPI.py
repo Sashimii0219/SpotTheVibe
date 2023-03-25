@@ -19,9 +19,9 @@ load_dotenv("resources/spotipy_credentials.env")
 # SPOTIPY_CLIENT_SECRET = os.getenv("SPOTIPY_CLIENT_SECRET")
 # SPOTIPY_REDIRECT_URI = os.getenv("SPOTIPY_REDIRECT_URI")
 
-SPOTIPY_CLIENT_ID = st.secrets("SPOTIPY_CLIENT_ID")
-SPOTIPY_CLIENT_SECRET = st.secrets("SPOTIPY_CLIENT_SECRET")
-SPOTIPY_REDIRECT_URI = st.secrets("SPOTIPY_REDIRECT_URI")
+SPOTIPY_CLIENT_ID = st.secrets.SPOTIPY_CLIENT_ID
+SPOTIPY_CLIENT_SECRET = st.secrets.SPOTIPY_CLIENT_SECRET
+SPOTIPY_REDIRECT_URI = st.secrets.SPOTIPY_REDIRECT_URI
 SCOPE = 'user-read-private user-read-email user-library-read user-library-modify playlist-modify-private playlist-modify-public ugc-image-upload'.replace(' ','+')  # the scope of access you require
 RESPONSE_TYPE = 'code'
 TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token'
