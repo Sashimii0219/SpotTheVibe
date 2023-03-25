@@ -1,1 +1,2 @@
 resources/spotipy_credentials.env
+.streamlit/secrets.toml
