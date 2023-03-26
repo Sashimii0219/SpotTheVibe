@@ -48,7 +48,7 @@ with col5:
 auth_url = f'https://accounts.spotify.com/authorize?client_id={spotifyAPI.SPOTIPY_CLIENT_ID}&response_type={spotifyAPI.RESPONSE_TYPE}&redirect_uri={spotifyAPI.SPOTIPY_REDIRECT_URI}&scope={spotifyAPI.SCOPE}'
 
 st.header("To get your song recommendations, follow the steps below:")
-st.markdown(f'1. Press on <b><a href="{auth_url}" target="_self">this</a></b> to log in and authenticate.', unsafe_allow_html=True)
+st.markdown(f'1. Press on <b><a href="{auth_url}" target="_blank">this</a></b> to log in and authenticate.', unsafe_allow_html=True)
 st.write("2. Go to 'Input' tab to pull your saved tracks.")
 st.write("3. Adjust the number of songs to generate, and their popularity.")
 st.write("4. Press on 'Please Generate Recommendations For Me Sir!' for your song recommendations.")
