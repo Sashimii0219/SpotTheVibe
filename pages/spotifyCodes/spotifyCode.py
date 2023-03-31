@@ -18,7 +18,7 @@ from pages.spotifyCodes.spotifyAPI import *
 def retrieve_saved_tracks(access_token):
     #Retrieve 50 most recently saved songs
     results_saved = get_saved_tracks(access_token,50)
-    return results_saved
+
     # Need to account for no saved_tracks
     ##########
 

@@ -52,7 +52,6 @@ if st.button('Pull Saved Tracks', help='Oh yeah pull it!'):
     
     else:
         saved_tracks = spotifyCode.retrieve_saved_tracks(access_token)
-        st.write(saved_tracks)
 
         if len(saved_tracks) != 0:
             st.write('Here\'s your saved tracks!')
