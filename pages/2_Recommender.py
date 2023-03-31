@@ -6,8 +6,8 @@ from pages.spotifyCodes import spotifyCode
 st.title("Recommendations")
 
 if st.session_state.show_recommendation:
-    recommendations = pd.read_csv("recommended_songs.csv")
-    print(recommendations)
+    recommendations = st.session_state.df
+    
     if len(recommendations.index) != 0:
         recommendation = recommendations[['name','artists','year','genre_filtered2']]
         st.dataframe(recommendation)

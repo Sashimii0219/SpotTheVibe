@@ -112,8 +112,7 @@ if st.button('Please Generate Recommendations For Me Sir!', help='Yes', key='but
             recommendation = spotifyCode.generate_playlist_recos(spotify_df, complete_feature_set_playlist_vector, complete_feature_set_nonplaylist).head(no_of_songs)
             # st.dataframe(recommendation)
             
-            file_path = Path('Input.py').parent.absolute()  / "recommended_songs.csv"
-            recommendation.to_csv(file_path)
+            st.session_state.df = recommendation
             # print(file_path)
             st.balloons()
             st.snow()
